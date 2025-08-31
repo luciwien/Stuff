@@ -1,0 +1,25 @@
+ {
+   "emeraldwalk.runonsave": {
+     "commands": [
+       {
+         // Match all html, css, and js files
+         // except for `exclude-me.js`
+         "match": "csconfig\\.*",
+         //"notMatch": "exclude-me\\.js$",
+         "cmd": "xcopy  B:\\Stuff\\csconfig\\* \"B:\\SteamLibrary\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\*\"  /s /e /y"
+       }
+     ]
+   }
+ }
+// //
+// {
+//   "emeraldwalk.runonsave": {
+//     "commands": [
+//       {
+//         // Run whenever any file is saved
+//         "match": ".*",
+//         "cmd": "echo '${fileBasename}' saved."
+//       }
+//     ]
+//   }
+// }
